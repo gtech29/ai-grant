@@ -21,23 +21,26 @@ export default function Navbar() {
         {/* Navigation */}
         <NavigationMenu>
           <NavigationMenuList>
+            {/* Home */}
             <NavigationMenuItem>
               <NavigationMenuLink asChild className="px-4 py-2">
-                <Link href="/about">Home</Link>
+                <Link href="/">Home</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
+            {/* Student Flow */}
             <NavigationMenuItem>
               <NavigationMenuLink asChild className="px-4 py-2">
-                <Link href="/about">Faculty Flow</Link>
+                <Link href="/student-flow">Student Flow</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            {/* Faculty Flow */}
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild className="px-4 py-2">
+                <Link href="/faculty-flow">Faculty Flow</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild className="px-4 py-2">
-                <Link href="/contact">Student Flow</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </div>

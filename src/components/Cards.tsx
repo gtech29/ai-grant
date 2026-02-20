@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Cards() {
   return (
@@ -74,7 +75,7 @@ export default function Cards() {
 
             <CardFooter className="pt-4">
               <Button variant="outline" size="sm">
-                Student Flow
+                <Link href="/student-flow">Student Flow</Link>
               </Button>
             </CardFooter>
           </Card>
@@ -99,7 +100,7 @@ export default function Cards() {
 
             <CardFooter className="pt-4">
               <Button variant="outline" size="sm">
-                Faculty Flow
+                <Link href="/faculty-flow">Faculty Flow</Link>
               </Button>
             </CardFooter>
           </Card>
